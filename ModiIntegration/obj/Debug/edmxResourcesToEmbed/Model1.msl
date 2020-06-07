@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MODICENTER_DBModelStoreContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="R_Modi">
+      <EntityTypeMapping TypeName="MODICENTER_DBModel.R_Modi">
+        <MappingFragment StoreEntitySet="R_Modi">
+          <ScalarProperty Name="RCustomerNum" ColumnName="RCustomerNum" />
+          <ScalarProperty Name="RCode" ColumnName="RCode" />
+          <ScalarProperty Name="RWeddingDate" ColumnName="RWeddingDate" />
+          <ScalarProperty Name="RDate" ColumnName="RDate" />
+          <ScalarProperty Name="RDateHour" ColumnName="RDateHour" />
+          <ScalarProperty Name="RCustomerName" ColumnName="RCustomerName" />
+          <ScalarProperty Name="RCustomerSurname" ColumnName="RCustomerSurname" />
+          <ScalarProperty Name="RCustomerPhone" ColumnName="RCustomerPhone" />
+          <ScalarProperty Name="RCustomerCity" ColumnName="RCustomerCity" />
+          <ScalarProperty Name="RSuccess" ColumnName="RSuccess" />
+          <ScalarProperty Name="RCancelled" ColumnName="RCancelled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RC_modi">
+      <EntityTypeMapping TypeName="MODICENTER_DBModel.RC_modi">
+        <MappingFragment StoreEntitySet="RC_modi">
+          <ScalarProperty Name="RCNyfikoDesc" ColumnName="RCNyfikoDesc" />
+          <ScalarProperty Name="RBrandName" ColumnName="RBrandName" />
+          <ScalarProperty Name="RCNyfiko" ColumnName="RCNyfiko" />
+          <ScalarProperty Name="RCode" ColumnName="RCode" />
+          <ScalarProperty Name="RChoiceId" ColumnName="RChoiceId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

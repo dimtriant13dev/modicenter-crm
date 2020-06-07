@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MODICENTER_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="R_Modi">
+    <Key>
+      <PropertyRef Name="RCode" />
+    </Key>
+    <Property Name="RCustomerNum" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RWeddingDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="RDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="RDateHour" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RCustomerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RCustomerSurname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RCustomerPhone" Type="text" Nullable="false" />
+    <Property Name="RCustomerCity" Type="text" Nullable="false" />
+    <Property Name="RSuccess" Type="nvarchar" MaxLength="50" />
+    <Property Name="RCancelled" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="RC_modi">
+    <Key>
+      <PropertyRef Name="RChoiceId" />
+    </Key>
+    <Property Name="RChoiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="RCNyfiko" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RBrandName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RCNyfikoDesc" Type="nvarchar(max)" />
+  </EntityType>
+  <Association Name="FK__RC_modi__RCode__3B75D760">
+    <End Role="R_Modi" Type="Self.R_Modi" Multiplicity="0..1" />
+    <End Role="RC_modi" Type="Self.RC_modi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="R_Modi">
+        <PropertyRef Name="RCode" />
+      </Principal>
+      <Dependent Role="RC_modi">
+        <PropertyRef Name="RCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MODICENTER_DBModelStoreContainer">
+    <EntitySet Name="R_Modi" EntityType="Self.R_Modi" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RC_modi" EntityType="Self.RC_modi" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__RC_modi__RCode__3B75D760" Association="Self.FK__RC_modi__RCode__3B75D760">
+      <End Role="R_Modi" EntitySet="R_Modi" />
+      <End Role="RC_modi" EntitySet="RC_modi" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

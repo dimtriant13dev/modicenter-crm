@@ -1,0 +1,14 @@
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\x86\Release\ModiIntegration.exe.config
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\x86\Release\ModiIntegration.exe
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\x86\Release\ModiIntegration.pdb
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\MainWindow.g.cs
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\App.g.cs
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\ModiIntegration_MarkupCompile.cache
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\ModiIntegration_MarkupCompile.lref
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\MainWindow.baml
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\ModiIntegration.g.resources
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\ModiIntegration.Properties.Resources.resources
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\ModiIntegration.csproj.GenerateResource.cache
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\ModiIntegration.exe
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\ModiIntegration.pdb
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\x86\Release\ModiIntegration.csprojAssemblyReference.cache

@@ -1,0 +1,54 @@
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\Debug\ModiIntegration.exe.config
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\Debug\ModiIntegration.exe
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\Debug\ModiIntegration.pdb
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.csprojAssemblyReference.cache
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\MainWindow.g.cs
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\App.g.cs
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration_MarkupCompile.cache
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration_MarkupCompile.lref
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\MainWindow.baml
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.g.resources
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.Properties.Resources.resources
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.csproj.GenerateResource.cache
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.exe
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.pdb
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiControllSystem.g.cs
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiControllSystem.baml
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignColors.dll
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignColors.pdb
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\App.baml
+C:\Users\dimtr\OneDrive\Έγγραφα\Visual Studio 2019\Apps\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.csproj.CopyComplete
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\ModiIntegration.exe.config
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\ModiIntegration.exe
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\ModiIntegration.pdb
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignColors.dll
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignColors.pdb
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.csprojResolveAssemblyReference.cache
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\MainWindow.g.cs
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiControllSystem.g.cs
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\App.g.cs
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration_MarkupCompile.cache
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration_MarkupCompile.lref
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\App.baml
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\MainWindow.baml
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiControllSystem.baml
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.g.resources
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.Properties.Resources.resources
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.csproj.GenerateResource.Cache
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.exe
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration.pdb
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\RendezVous.g.cs
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\RendezVous.baml
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\EntityFramework.dll
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\EntityFramework.xml
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\ModiIntegration_Content.g.cs
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\OrderNyfiko.g.cs
+C:\Users\dimtriant\Desktop\ModiIntegration\ModiIntegration\ModiIntegration\obj\Debug\OrderNyfiko.baml

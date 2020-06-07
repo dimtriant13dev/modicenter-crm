@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="MODICENTER_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="R_Modi">
+          <Key>
+            <PropertyRef Name="RCode" />
+          </Key>
+          <Property Name="RCustomerNum" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RWeddingDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="RDate" Type="nvarchar" MaxLength="50" />
+          <Property Name="RDateHour" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RCustomerName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RCustomerSurname" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RCustomerPhone" Type="text" Nullable="false" />
+          <Property Name="RCustomerCity" Type="text" Nullable="false" />
+          <Property Name="RSuccess" Type="nvarchar" MaxLength="50" />
+          <Property Name="RCancelled" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="RC_modi">
+          <Key>
+            <PropertyRef Name="RChoiceId" />
+          </Key>
+          <Property Name="RChoiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="RCNyfiko" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RBrandName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="RCNyfikoDesc" Type="nvarchar(max)" />
+        </EntityType>
+        <Association Name="FK__RC_modi__RCode__3B75D760">
+          <End Role="R_Modi" Type="Self.R_Modi" Multiplicity="0..1" />
+          <End Role="RC_modi" Type="Self.RC_modi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="R_Modi">
+              <PropertyRef Name="RCode" />
+            </Principal>
+            <Dependent Role="RC_modi">
+              <PropertyRef Name="RCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MODICENTER_DBModelStoreContainer">
+          <EntitySet Name="R_Modi" EntityType="Self.R_Modi" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RC_modi" EntityType="Self.RC_modi" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__RC_modi__RCode__3B75D760" Association="Self.FK__RC_modi__RCode__3B75D760">
+            <End Role="R_Modi" EntitySet="R_Modi" />
+            <End Role="RC_modi" EntitySet="RC_modi" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MODICENTER_DBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="R_Modi">
+          <Key>
+            <PropertyRef Name="RCode" />
+          </Key>
+          <Property Name="RCustomerNum" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RWeddingDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RDateHour" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RCustomerName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RCustomerSurname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RCustomerPhone" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RCustomerCity" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RSuccess" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RCancelled" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="RC_modi" Relationship="MODICENTER_DBModel.FK__RC_modi__RCode__3B75D760" FromRole="R_Modi" ToRole="RC_modi" />
+        </EntityType>
+        <EntityContainer Name="DBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="R_Modi" EntityType="Self.R_Modi" />
+          <EntitySet Name="RC_modi" EntityType="MODICENTER_DBModel.RC_modi" />
+          <AssociationSet Name="FK__RC_modi__RCode__3B75D760" Association="MODICENTER_DBModel.FK__RC_modi__RCode__3B75D760">
+            <End Role="R_Modi" EntitySet="R_Modi" />
+            <End Role="RC_modi" EntitySet="RC_modi" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="RC_modi">
+          <Key>
+            <PropertyRef Name="RChoiceId" />
+          </Key>
+          <Property Name="RChoiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RCNyfiko" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RBrandName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RCNyfikoDesc" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="R_Modi" Relationship="MODICENTER_DBModel.FK__RC_modi__RCode__3B75D760" FromRole="RC_modi" ToRole="R_Modi" />
+        </EntityType>
+        <Association Name="FK__RC_modi__RCode__3B75D760">
+          <End Type="MODICENTER_DBModel.R_Modi" Role="R_Modi" Multiplicity="0..1" />
+          <End Type="MODICENTER_DBModel.RC_modi" Role="RC_modi" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="R_Modi">
+              <PropertyRef Name="RCode" />
+            </Principal>
+            <Dependent Role="RC_modi">
+              <PropertyRef Name="RCode" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MODICENTER_DBModelStoreContainer" CdmEntityContainer="DBEntities">
+          <EntitySetMapping Name="R_Modi">
+            <EntityTypeMapping TypeName="MODICENTER_DBModel.R_Modi">
+              <MappingFragment StoreEntitySet="R_Modi">
+                <ScalarProperty Name="RCustomerNum" ColumnName="RCustomerNum" />
+                <ScalarProperty Name="RCode" ColumnName="RCode" />
+                <ScalarProperty Name="RWeddingDate" ColumnName="RWeddingDate" />
+                <ScalarProperty Name="RDate" ColumnName="RDate" />
+                <ScalarProperty Name="RDateHour" ColumnName="RDateHour" />
+                <ScalarProperty Name="RCustomerName" ColumnName="RCustomerName" />
+                <ScalarProperty Name="RCustomerSurname" ColumnName="RCustomerSurname" />
+                <ScalarProperty Name="RCustomerPhone" ColumnName="RCustomerPhone" />
+                <ScalarProperty Name="RCustomerCity" ColumnName="RCustomerCity" />
+                <ScalarProperty Name="RSuccess" ColumnName="RSuccess" />
+                <ScalarProperty Name="RCancelled" ColumnName="RCancelled" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RC_modi">
+            <EntityTypeMapping TypeName="MODICENTER_DBModel.RC_modi">
+              <MappingFragment StoreEntitySet="RC_modi">
+                <ScalarProperty Name="RCNyfikoDesc" ColumnName="RCNyfikoDesc" />
+                <ScalarProperty Name="RBrandName" ColumnName="RBrandName" />
+                <ScalarProperty Name="RCNyfiko" ColumnName="RCNyfiko" />
+                <ScalarProperty Name="RCode" ColumnName="RCode" />
+                <ScalarProperty Name="RChoiceId" ColumnName="RChoiceId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

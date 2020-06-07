@@ -1,0 +1,126 @@
+﻿<Window x:Class="ModiIntegration.OrderNyfiko"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModiIntegration"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="OrderNyfiko" Height="600" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="479*"/>
+            <ColumnDefinition Width="545*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid x:Name="TitleBar"  Grid.ColumnSpan="2" Background="#FF707070" MouseDown="OrderNyfiko_MouseDown">
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Left" Background="{x:Null}" Margin="10,0">
+                <Button x:Name="ButtonBack" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" >
+                    <materialDesign:PackIcon Kind="ArrowBack"/>
+                </Button>
+            </StackPanel>
+            <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right" Background="{x:Null}" Margin="0,0,10,0">
+                <Button Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="Button_Minimize_Click">
+                    <materialDesign:PackIcon Kind="WindowMinimize"/>
+                </Button>
+                <Button x:Name="ButtonExit" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="button_Exit_OnClick">
+                    <materialDesign:PackIcon Kind="Close"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Label Content="ΚΩΔΙΚΟΣ ΠΑΡΑΓΓΕΛΙΑΣ ΓΑΜΟΥ" HorizontalAlignment="Left" Margin="67,50,0,0" VerticalAlignment="Top" Width="180" Height="24"/>
+            <Label Content="ΗΜΕΡΟΜΗΝΙΑ ΓΑΜΟΥ" HorizontalAlignment="Left" Margin="113,74,0,0" VerticalAlignment="Top" Width="134" Height="24"/>
+            <Label Content="ΗΜΕΡΟΜΗΝΙΑ ΠΑΡΑΔΟΣΗΣ" HorizontalAlignment="Left" Margin="85,98,0,0" VerticalAlignment="Top" Width="162" Height="24"/>
+            <TextBox HorizontalAlignment="Left" Height="22" Margin="253,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190"/>
+            <Label Content="ΝΥΦΙΚΟ" HorizontalAlignment="Left" Margin="49,173,0,0" Grid.Row="1" VerticalAlignment="Top" Width="54" Height="24"/>
+            <Label Content="ΣΧΕΔΙΑΣΤΗΣ" HorizontalAlignment="Left" Margin="29,202,0,0" Grid.Row="1" VerticalAlignment="Top" Width="79" Height="24"/>
+            <Label Content="ΠΕΡΙΓΡΑΦΗ" HorizontalAlignment="Left" Margin="29,234,0,0" Grid.Row="1" VerticalAlignment="Top" Width="74" Height="24"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="253,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190"/>
+            <TextBox HorizontalAlignment="Left" Height="22" Margin="253,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="108,203,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230"/>
+            <TextBox HorizontalAlignment="Left" Height="79" Margin="108,234,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230"/>
+            <Label Content="ΠΑΡΑΝΥΦΑΚΙΑ" HorizontalAlignment="Left" Margin="10,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="93" Height="24"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="108,318,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230"/>
+            <Label Content="ΤΙΜΗ" HorizontalAlignment="Left" Margin="390,156,0,0" VerticalAlignment="Top" Width="48" Height="24" RenderTransformOrigin="0.562,-1.5"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="343,203,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="343,289,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="343,318,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126"/>
+            <Label Content="ΠΡΟΚΑΤΑΒΟΛΗ" HorizontalAlignment="Left" Margin="10,396,0,0" VerticalAlignment="Top" Height="24" Width="98" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="108,396,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
+            <Label Content="ΗΜ/ΝΙΑ" HorizontalAlignment="Left" Margin="195,396,0,0" Grid.Row="1" VerticalAlignment="Top" Height="24" Width="52"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="343,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126"/>
+            <DatePicker HorizontalAlignment="Left" Margin="252,396,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-1.643,0.5" Width="86" Height="25"/>
+            <Button x:Name="btnAddPaymentInAdvac" Margin="108,426,141,110" Background="#FF45AA3B" FontFamily="Calibri" Height="Auto" BorderBrush="#FF45AA3B" >
+                <Grid Width="150">
+                    <materialDesign:PackIcon Kind="Add" VerticalAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Center" Text="ΠΡΟΚΑΤΑΒΟΛΗ" Margin="35,0,10,0" Width="105" />
+                </Grid>
+            </Button>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="108,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="230"/>
+            <Label Content="ΓΕΝΙΚΟ ΣΥΝΟΛΟ" HorizontalAlignment="Left" Margin="239,465,0,0" VerticalAlignment="Top" Height="24" Width="104" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="343,465,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126"/>
+            <Label Content="ΥΠΟΛΟΙΠΟ" HorizontalAlignment="Left" Margin="268,494,0,0" VerticalAlignment="Top" Height="24" Width="75" FontWeight="Bold"/>
+            <TextBox HorizontalAlignment="Left" Height="24" Margin="343,494,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="126"/>
+            <Label Content="ΣΤΟΙΧΕΙΑ ΠΑΡΑΓΓΕΛΙΑΣ" HorizontalAlignment="Left" Margin="190,124,0,0" VerticalAlignment="Top" Height="27" Width="148" FontWeight="Bold"/>
+            <Button x:Name="btnPrev" Margin="291,10,136,525" Background="#FF6C1900" FontFamily="Calibri" Height="Auto" BorderBrush="#FF6C1900" >
+                <Grid Width="26">
+                    <materialDesign:PackIcon Kind="ArrowBackCircle" VerticalAlignment="Center" RenderTransformOrigin="2.844,0.656"/>
+                </Grid>
+            </Button>
+            <Button x:Name="btnPrev_Copy" Margin="348,10,79,525" Background="#FF6C1900" FontFamily="Calibri" Height="Auto" BorderBrush="#FF6C1900" >
+                <Grid Width="26">
+                    <materialDesign:PackIcon Kind="ArrowRightCircle" VerticalAlignment="Center" RenderTransformOrigin="2.844,0.656"/>
+                </Grid>
+            </Button>
+            <Button x:Name="btnPrev_Copy1" Margin="138,10,190,525" Background="#FF6C1900" FontFamily="Calibri" Height="Auto" BorderBrush="#FF6C1900" >
+                <Grid Width="150">
+                    <materialDesign:PackIcon Kind="Eye" VerticalAlignment="Center" RenderTransformOrigin="2.844,0.656"/>
+                    <TextBlock HorizontalAlignment="Center" Text="ΠΡΟΒΟΛΗ" Margin="35,0,42,0" Width="73" />
+                </Grid>
+            </Button>
+        </Grid>
+        <Grid Grid.Column="1" Grid.Row="1" Margin="0,10,0,-5">
+            <Label Content="ΟΝΟΜ/ΕΠΩΝΥΜΟ ΝΥΦΗΣ" HorizontalAlignment="Left" Margin="86,17,0,0" VerticalAlignment="Top" Width="161" Height="24"/>
+            <Label Content="ΟΝΟΜ/ΕΠΩΝΥΜΟ ΓΑΜΠΡΟΥ" HorizontalAlignment="Left" Margin="72,43,0,0" VerticalAlignment="Top" Width="175" Height="24"/>
+            <Label Content="ΔΙΕΥΘΥΝΣΗ" HorizontalAlignment="Left" Margin="165,71,0,0" VerticalAlignment="Top" Width="77" Height="24"/>
+            <Label Content="ΤΗΛΕΦΩΝΟ" HorizontalAlignment="Left" Margin="165,100,0,0" VerticalAlignment="Top" Width="77" Height="24"/>
+            <Label Content="EMAIL" HorizontalAlignment="Left" Margin="197,127,0,0" VerticalAlignment="Top" Width="45" Height="24"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="247,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="247,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="247,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="190"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="247,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="191"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="247,128,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="191"/>
+            <DataGrid HorizontalAlignment="Left" Height="108" Margin="0,156,0,0" VerticalAlignment="Top" Width="536"/>
+            <DataGrid HorizontalAlignment="Left" Height="115" Margin="0,269,0,0" VerticalAlignment="Top" Width="536"/>
+            <Button x:Name="btnEditWeddingOrder" Margin="303,400,10,113" Background="#FF6A617A" FontFamily="Calibri" Height="Auto" BorderBrush="#FF6A617A">
+                <Grid Width="150">
+                    <materialDesign:PackIcon Kind="Edit" VerticalAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Center" Text="ΕΠΕΞΕΡΓΑΣΙΑ" Margin="35,0,10,0" Width="105" />
+                </Grid>
+            </Button>
+            <Button x:Name="btnEditWeddingOrder_Copy" Margin="10,400,303,113" Background="#FF45AA3B" FontFamily="Calibri" Height="Auto" BorderBrush="#FF45AA3B" >
+                <Grid Width="150">
+                    <materialDesign:PackIcon Kind="AddCircle" VerticalAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Center" Text="ΠΡΟΣΘΗΚΗ" Margin="45,0,0,0" Width="105" />
+                </Grid>
+            </Button>
+            <Button x:Name="btnEditWeddingOrder_Copy1" Margin="10,478,303,35" Background="#FFCD423B" FontFamily="Calibri" Height="Auto" BorderBrush="#FFCD423B" >
+                <Grid Width="150">
+                    <materialDesign:PackIcon Kind="Cancel" VerticalAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Center" Text="ΑΚΥΡΩΣΗ" Margin="45,0,0,0" Width="105" />
+                </Grid>
+            </Button>
+            <Button x:Name="btnEditWeddingOrder_Copy2" Margin="304,478,9,35" Background="#FF6C1900" FontFamily="Calibri" Height="Auto" BorderBrush="#FF6C1900">
+                <Grid Width="150">
+                    <materialDesign:PackIcon Kind="Achievement" VerticalAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Center" Text="ΠΑΡΑΔΟΘΗΚΕ" Margin="45,0,0,0" Width="105" />
+                </Grid>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>
